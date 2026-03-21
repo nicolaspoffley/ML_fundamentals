@@ -87,7 +87,7 @@ where $\lambda$ is the eigenvalue.
 
 Given a formula $f(x) = x^2$, given a value of $x$, we can calculate the value of $f(x)$. We could use this to plot a graph of $f(x)$, which would be a parabola:
 
-![Graph of f(x)=x^2](images/y=xsq.png)
+![Graph of f(x)=x^2](../images/y=xsq.png)
 
 To get the gradient of _f(x)_, we need the **derivative**. To get a derivative, we use these rules below. For the example, we only need the power rule, which gives us $f'(x) = 2x$.
 
@@ -127,4 +127,25 @@ $$
 
 ## Probability & statistics
 
-todo :)
+**Variance** is calculated as the average of the squared differences from the mean. The formula for variance is:
+
+$$
+\sigma^2 = \frac{1}{n} \sum_{i=1}^{n} (x_i - \mu)^2
+$$
+
+where $\sigma^2$ is the variance, $n$ is the number of observations, $x_i$ is each observation, and $\mu$ is the mean.
+
+**Expected value** is the average value of a random variable. It is calculated as:
+$$
+E[X] = \sum_{i} x_i P(X = x_i)
+$$
+where $E[X]$ is the expected value of the random variable $X$, $x_i$ are the possible values of $X$, and $P(X = x_i)$ is the probability that $X$ takes on the value $x_i$.
+
+
+**Bias** is the difference between the expected value of an estimator and the true value of the parameter being estimated. It can be calculated as:
+
+$$
+\text{bias} = E[\hat{\theta}] - \theta
+$$
+
+where $E[\hat{\theta}]$ is the expected value of the estimator $\hat{\theta}$ and $\theta$ is the true value of the parameter. So it shows how good the estimator is.
