@@ -1,0 +1,1 @@
+This documentation serves as my rehashing of ML and AI, with mathematical foundations before more complex topics like neural networks and deep learning. It will be missing things I do not want to cover, but will expand as I go.
