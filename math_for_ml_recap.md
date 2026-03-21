@@ -119,9 +119,7 @@ $$
 \frac{d}{dx} f(g(x)) = f'(g(x)) \cdot g'(x)
 $$
 
-Basically you use it when there is a function inside another function. An example, lets try to derive $h(x) = (sinx)^2$.
-
-We think of $f(g(x))$ as $(sin x)^2$ and g(x) as $sin x$. So, we can apply the chain rule:
+Basically you use it when there is a function inside another function. An example, lets try to derive $h(x) = (sinx)^2$. We think of $f(g(x))$ as $(sin x)^2$ and g(x) as $sin x$. So, we can apply the chain rule:
 
 $$
 h'(x) = 2(sinx) \cdot cosx
