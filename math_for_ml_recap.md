@@ -91,11 +91,11 @@ Given a formula $f(x) = x^2$, given a value of $x$, we can calculate the value o
 
 To get the gradient of _f(x)_, we need the **derivative**. To get a derivative, we use these rules below. For the example, we only need the power rule, which gives us $f'(x) = 2x$.
 
-- Power rule: $ \frac{d}{dx} x^n = nx^{n-1} $
-- Sum rule: $ \frac{d}{dx} (f(x) + g(x)) = \frac{d}{dx} f(x) + \frac{d}{dx} g(x) $
-- Product rule: $ \frac{d}{dx} (f(x)g(x)) = f'(x)g(x) + f(x)g'(x) $
-- Quotient rule: $ \frac{d}{dx} \left( \frac{f(x)}{g(x)} \right) = \frac{f'(x)g(x) - f(x)g'(x)}{g(x)^2} $
-- Chain rule: $ \frac{d}{dx} f(g(x)) = f'(g(x)) \cdot g'(x) $
+- Power rule: $\frac{d}{dx} x^n = nx^{n-1}$
+- Sum rule: $\frac{d}{dx} (f(x) + g(x)) = \frac{d}{dx} f(x) + \frac{d}{dx} g(x)$
+- Product rule: $\frac{d}{dx} (f(x)g(x)) = f'(x)g(x) + f(x)g'(x)$
+- Quotient rule: $\frac{d}{dx} \left( \frac{f(x)}{g(x)} \right) = \frac{f'(x)g(x) - f(x)g'(x)}{g(x)^2}$
+- Chain rule: $\frac{d}{dx} f(g(x)) = f'(g(x)) \cdot g'(x)$
 
 But what if we have a function with more than one variable? Take the following example:
 
