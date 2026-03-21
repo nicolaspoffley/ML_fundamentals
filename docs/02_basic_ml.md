@@ -96,3 +96,9 @@ For a good F1 score, both precision and recall need to be high. It is especially
 The ROC curve plots the true positive rate (recall) against the false positive rate $(FP / (FP + TN))$ at various threshold levels. The AUC represents the area under this curve, with a value of 1 indicating a perfect classifier and a value of 0.5 indicating a random classifier. A higher AUC indicates better model performance in distinguishing between the positive and negative classes.
 
 ![ROC Curve](../images/roc_auc.png)
+
+
+
+todo: 
+
+Loss functions

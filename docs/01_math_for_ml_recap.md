@@ -149,3 +149,13 @@ $$
 $$
 
 where $E[\hat{\theta}]$ is the expected value of the estimator $\hat{\theta}$ and $\theta$ is the true value of the parameter. So it shows how good the estimator is.
+
+
+
+
+
+todo:
+
+Random variables
+Distributions (normal, Bernoulli)
+Conditional probability
