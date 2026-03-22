@@ -151,20 +151,6 @@ $$
 where $E[\hat{\theta}]$ is the expected value of the estimator $\hat{\theta}$ and $\theta$ is the true value of the parameter. So it shows how good the estimator is.
 
 
-
-
-
-todo:
-
-Random variables
-Distributions (normal, Bernoulli)
-Conditional probability
-Hypothesis testing & the null hypothesis
-p-values
-
-
-
-
 **Probability distributions** describe the probability of an event occuring. The **normal**, or **Gaussian distrubution** is a symmetric, bell-shaped continuous distribution. 
 * Always centered on the mean, $\mu$.
 * The spread of the distribution (width of curve) is determined by the standard deviation, $\sigma$ ($\sigma = \sqrt{variance}$).
