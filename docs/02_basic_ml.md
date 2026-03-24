@@ -145,3 +145,10 @@ We will do this with **gradient descent**. Gradient descent can be used to optim
 - Pick random values for each parameter (e.g. slope and intercept).
 - Update the parameters iteratively by moving in the direction of the negative gradient, scaled by a learning rate (a small positive value that controls the step size of the updates).
 - Repeat until convergence (when the change in loss is very small or after a certain number of iterations).
+
+**Logistic Regression**
+
+* Used to predict a binary outcome, based on input features (could be discrete or continuous).
+* Instead of using least squares as a loss function to tune the model, we could use maximum likelihood. More on this later.
+
+* Key point - the logit formula: $\text{logit}(p) = \log(\frac{p}{1-p})$. We will use the logit function to transform the output of a linear model into a probability between 0 and 1. When we present coefficients of a logistic regression model, we are actually presenting the coefficients of the linear model that is used to calculate the logit of the probability. In other words, for the log odds of the probability, not the probability itself.
