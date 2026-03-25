@@ -131,7 +131,27 @@ $$\text{Adjusted } R^2 = 1 - \frac{(1 - R^2)(n - 1)}{n - k - 1}$$
 where $n$ is the number of observations and $k$ is the number of features. This way, if a feature does not improve the model, the adjusted $R^2$ will decrease, discouraging the addition of useless features.
 
 
-We can also calculate a **p-value** to determine statistical significance (expand here). A low p-value (e.g., < 0.05) indicates that the feature is statistically significant and likely has a real relationship with the output variable, while a high p-value suggests that the feature may not be useful for prediction.
+We can also calculate a **p-value** to determine statistical significance.
+* Calulate $F$ .  $$F = \frac{(SS(mean) - SS(fit)) / k}{SS(fit) / (n - k - 1)}$$ where k is the number of features, n is the number of observations. This can be rewritten in terms of $R^2$ as:
+
+$$F = \frac{(R^2 / k)}{((1 - R^2) / (n - k - 1))}$$
+* Given the calculated $F$ value:
+* null hypothesis: model is no better at predicting than the mean.
+* alternative hypothesis: model is better at predicting than the mean.
+* If F is near 1, we accept null hypothesis. If F greater than 1, it's suspicious under the null hypothesis.
+* Under the null hypothesis, F follows an F-distribution with $k$ (numerator degrees of freedom) and $n-k-1$ degrees of freedom (denominator).
+* The p value is the probability of observing an F value as or more extreme than the calculated F value under the null hypothesis. 
+$$
+p=P(_{k,n-k-1}≥F_{\text{observed}})
+$$
+* Large F value -> small p value -> reject null hypothesis -> model is statistically significant.
+
+Example: F=5.2, k=2, n-k-1=20. This example would be considered statistically significant. Only 1.5% chance of seeing this. (Reminder, k is feature count, n is observation count.)
+$$
+p=P(F_{2,20}≥5.2)≈0.015
+$$
+
+ A low p-value (e.g., < 0.05) indicates that the feature is statistically significant and likely has a real relationship with the output variable, while a high p-value suggests that the feature may not be useful for prediction.
 
 So, in linear regression, we are looking for a large $R^2$ (strong relationship between input features and the output variable) and low p-values (indicating statistical significance).
 

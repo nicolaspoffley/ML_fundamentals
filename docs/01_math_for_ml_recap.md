@@ -181,6 +181,8 @@ is called the binomial coefficient, it counts the number of ways to choose $x$ s
 
 So if we flip a coin 10 times, and we get heads 8 times, we can test our hypothesis that $p(heads) = 0.5$ using the binomial distribution. We can calculate the probability of getting 8 **or more** heads out of 10 flips (use the binomial distribution with x = 8, then 9, then 10, then sum the probabilities) under the null hypothesis that the coin is fair. This summed probability is called the **p-value**. If the p-value is very small (e.g., less than 0.05), we would reject the null hypothesis and conclude that the coin is likely biased towards heads.
 
+
+* **Bernoulli trial** - an experiment with two possible outcomes.
 * **Hypothesis** - A claim or assumption to test.
 * **Null hypothesis ($H_0$)** - A default assumption that there is no effect or relationship. In the coin flip example, the null hypothesis is that the coin is fair (p = 0.5).
 * **Alternative hypothesis ($H_1$)** - The opposite of the null hypothesis, it is what we want to provide evidence for. In the coin flip example, the alternative hypothesis is that the coin is biased towards heads (p > 0.5).
@@ -196,3 +198,17 @@ $$
 Or lets say we roll a dice 7 times. We want to find the probability that the sum is > 30. Instead of writing P(sum of 7 dice rolls > 30), we can define a random variable $X$ as the sum of the 7 dice rolls. Then we can write P(X > 30).
 
 A random variable is NOT a normal variable. With normal variables you can assign values and solve for, but random variables take on different values based on probabiliies. 
+
+**Entropy** is a measure of uncertainty or randomness in a random variable. It quantifies the amount of information needed to describe the random variable. It is simple to calculate. It is the **expected value of surprise** of a random variable, where **surprise** is $log(1/p(x))$. Inversely correlated to probability (if something is very likely, it's not very surprising..). Super easy to derive from definition of expected value + definition of surprise:
+
+$$
+\begin{aligned}
+H(X) &= E[\log(1/p(x))] \\
+&= \sum_{i} \log(1/p(x_i)) p(x_i) \\
+&= \sum_{i} (\log(0) - \log(p(x_i))) p(x_i) \\
+&= -\sum_{i} \log(p(x_i)) p(x_i)
+\end{aligned}
+$$
+
+
+
